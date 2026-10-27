@@ -15,6 +15,7 @@ I independently completed the following work:
 - improving traceability between assumptions, model inputs, numerical results, and conclusions;
 - documenting limitations and preventing diagnostic results from being presented as physical validation.
 - extending nominal reinforcement-section recovery at saved observation coordinates and auditing the corresponding numerical implementation.
+- assessing concrete compression fatigue through rainflow counting, the adopted S-N relationship and cumulative damage, alongside tensile-threshold exceedance.
 
 ## Source-material and software boundary
 

@@ -1,23 +1,25 @@
-# Traffic Organization and Bridge Deck Response
+# Traffic Organization and Bridge Deck Fatigue
 
 **Wang Yanjun**  
 Civil, Environmental and Resources Engineering, Faculty of Engineering, Kyoto University
 
-A research case study in vehicle–bridge interaction and nominal concrete stress-cycle demand. Preliminary results, October 2026.
+A research case study in vehicle–bridge interaction and concrete deck fatigue performance. Preliminary numerical results, October 2026.
 
 [Read the research poster](poster/VBI_research_poster.pdf) · [Editable PowerPoint](poster/VBI_research_poster.pptx) · [Results and interpretation](docs/results.md) · [My contribution](CONTRIBUTION.md)
 
 ![Research poster preview](poster/preview.png)
 
-## Results
+## Fatigue performance
 
-The study compares **22 traffic scenarios** using the same 240-vehicle fleet. At the duration-matched 40 m reference spacing, uniform traffic with normalized lateral spread 0.15 gives **R₃ = 0.679** and **R₅ = 1.557**, relative to two-lane traffic = 1. Grouped traffic gives **R₃ = 1.665** and **R₅ = 4.229**. The different exponents highlight the influence of larger stress cycles.
+The study compares **22 traffic scenarios** using the same 240-vehicle fleet. Fatigue performance combines **calculated compression-fatigue damage** with **tensile-threshold exceedances**.
 
-The minimum peak-range coverage across the 22 cases is **95.53%**, measured against the interior plate-field range. This coverage supports nominal stress-cycle screening. It does not establish a converged whole-deck cumulative-index maximum or a material fatigue-life ratio. [Definitions and the complete results table](docs/results.md).
+At the duration-matched 40 m reference spacing, the adopted concrete compression S-N model gives maximum full-spectrum cumulative damage of **9.593 × 10⁻¹⁴** for two-lane traffic and **5.282 × 10⁻¹⁴** for grouped traffic, evaluated over the same eligible locations. With stress-cycle ranges below 0.1 MPa excluded as a sensitivity check, these values become **2.978 × 10⁻¹⁵** and **9.546 × 10⁻¹⁵**. Grouped traffic also has **3 tensile-exceedance locations and 7 point episodes**. These outcomes describe different aspects of performance and should be interpreted together.
 
-![Traffic comparison](assets/traffic_comparison.png)
+![Compression-fatigue damage under traffic loading](assets/fatigue_performance.png)
 
-![Peak-range coverage across the traffic scenarios](assets/response_coverage.png)
+![Tensile-threshold exceedances](assets/tensile_exceedance.png)
+
+The displayed fatigue calculation uses traffic-load increments, K = 17 and a common eligible observation pool. Its controlling damage uses S-N continuation beyond two million cycles. The minimum recorded stress-range to field-range-upper-bound coverage is **98.53%**. These are conditional numerical fatigue results, without a conversion to service life. [Calculation method and complete results](docs/results.md).
 
 ## Overview
 
