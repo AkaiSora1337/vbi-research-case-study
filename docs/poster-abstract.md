@@ -1,6 +1,8 @@
 # Poster Abstract
 
-## Traffic Organization and Bridge Deck Fatigue
+## Concrete Bridge Deck and Slab Fatigue under Lane-Free Traffic
+
+Assessment Using a Vehicle–Bridge Interaction Framework
 
 **Wang Yanjun**  
 Civil, Environmental and Resources Engineering, Faculty of Engineering, Kyoto University
@@ -13,7 +15,7 @@ Professor Kai-Chun Chang provided the bridge drawings and source reference mater
 
 ## Suggested citation
 
-Wang, Y. (2026). *Traffic Organization and Bridge Deck Fatigue: Numerical fatigue performance under traffic loading* [Research poster and case study]. Kyoto University. October 2026.
+Wang, Y. (2026). *Concrete Bridge Deck and Slab Fatigue under Lane-Free Traffic: Assessment Using a Vehicle–Bridge Interaction Framework* [Research poster and case study]. Kyoto University. October 2026.
 
 ## Research status
 

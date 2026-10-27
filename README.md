@@ -1,4 +1,4 @@
-# Traffic Organization and Bridge Deck Fatigue
+# Concrete Bridge Deck and Slab Fatigue under Lane-Free Traffic
 
 **Wang Yanjun**  
 Civil, Environmental and Resources Engineering, Faculty of Engineering, Kyoto University

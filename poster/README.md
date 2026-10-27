@@ -1,6 +1,8 @@
 # Research Poster
 
-**Traffic Organization and Bridge Deck Fatigue**
+**Concrete Bridge Deck and Slab Fatigue under Lane-Free Traffic**
+
+Assessment Using a Vehicle–Bridge Interaction Framework
 
 Wang Yanjun, Kyoto University
 
