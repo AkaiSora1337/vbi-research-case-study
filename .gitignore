@@ -1,0 +1,48 @@
+# Never include material copied from the private research workspace.
+*.mat
+*.fig
+*.zip
+*.7z
+*.tar
+*.gz
+*.log
+*.json
+*.csv
+*.xlsx
+*.xls
+*.pdf
+*.doc
+*.docx
+*.m
+*.py
+*.sh
+
+# Generated outputs and local working files.
+output/
+results/
+tmp/
+work/
+data/
+private/
+drafts/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.asv
+
+# Secrets and local configuration.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Reviewed public poster exports only.
+!poster/VBI_research_poster.pdf
+!poster/VBI_research_poster.pptx
+poster/*.layout.json
+poster/*validation*
+.chart-data-*/
+.codex-finalizer/
+
