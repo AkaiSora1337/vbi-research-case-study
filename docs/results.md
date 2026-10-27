@@ -1,56 +1,78 @@
-# Selected Results
+# Results
 
-Wang Yanjun. Research snapshot assembled 27 October 2026.
+Wang Yanjun. October 2026.
 
-## Study scope
+## Computational study
 
-The computational study uses an equivalent bridge model with 26,520 MITC4 Reissner–Mindlin bending/shear plate elements and coupled steel beams and supports. The model has approximately 79,600 algebraic coordinates. The 22 selected traffic scenarios retain the same fleet of 240 vehicles, including 20 heavy vehicles. They explore vehicle-reference spacing, normalized lateral spread and vehicle ordering, together with two-lane and grouped-traffic references. This is a selected scenario study, not a full factorial design or a statistical ensemble.
+The equivalent bridge model includes 26,520 MITC4 Reissner–Mindlin bending/shear plate elements, coupled steel beams and supports, and approximately 79,600 algebraic coordinates. All 22 selected scenarios use the same 240-vehicle fleet, including 20 heavy vehicles, at 10 m/s on a smooth road. The time step is 0.002 s.
 
-Twenty initial scenarios passed saved-result completeness and contact-convergence checks. The five additional-output reruns described below preserved the original 213 scalar moment histories exactly. These checks support data consistency and solver convergence for the audited runs. They do not establish local spatial/time-step convergence or experimental validity for every reported quantity.
+The selected scenarios vary vehicle-reference spacing, normalized lateral spread and heavy-vehicle ordering, with two-lane and grouped-traffic references. This is a selected scenario study, rather than a full factorial design or a statistical ensemble. Grouped traffic changes the overall organization of the fleet and does not isolate a single causal variable.
 
-## Spatial sampling sensitivity
+## Stress-cycle indices
 
-The original map contains 71 physical observation locations, of which 61 lie at least 2 m from the bridge ends. The expanded map contains 119 locations, including 109 interior locations. Each location supplies three signed moment components. The comparison here uses the longitudinal/transverse normal-stress components at interior locations.
+Nominal uncracked gross-section concrete bending stress follows sigma = 6M/t², using the local thickness at each fixed probe. The stress increments exclude a permanent-load/membrane baseline. Complete signed histories provide rainflow stress ranges, with half-cycle weights. Longitudinal and transverse normal components enter the screening separately.
 
-Five cases share the expanded map: one two-lane reference and four uniform-order cases at normalized lateral spread 0.05 and vehicle-reference spacings of 30, 40, 60 and 115 m. Additional-output reruns use the same dynamic inputs. Every original moment channel matches its previous complete history with zero difference.
-
-The historical gross-section recovery uses nominal uncracked concrete bending stress, sigma = 6M/t², with local thickness evaluated at each probe. It excludes a permanent-load/membrane baseline. Rainflow counting uses each fixed scalar component's complete signed history with half-cycle weights. The screening index is:
-
-\[
+$$
 I_{m,j}=\sum_i n_i\left(\frac{\Delta\sigma_{i,j}}{1\ \mathrm{MPa}}\right)^m,
 \qquad
 R_{m,\max}=\frac{\max_j I_{m,j}(\mathrm{case})}{\max_j I_{m,j}(\mathrm{reference})}.
-\]
+$$
 
-The exponents m = 3 and 5 are declared screening weights. They do not represent an adopted material S-N relation. Each map supplies both the numerator and denominator of its own ratio. The controlling locations may differ between cases.
+The two-lane reference equals 1. Exponents m = 3 and 5 are declared screening weights. They do not represent adopted material S-N slopes. The maxima in the numerator and denominator may occur at different fixed locations.
 
-![Comparison of original and expanded recording maps](../assets/sampling_sensitivity.png)
+## Traffic comparison
 
-| Vehicle reference spacing | Original-map R₃ | Expanded-map R₃ | Original-map R₅ | Expanded-map R₅ |
-|---|---:|---:|---:|---:|
-| 30 m | 11.6144 | 1.7622 | 39.5816 | 2.6186 |
-| 40 m | 11.8065 | 1.7905 | 40.4374 | 2.6668 |
-| 60 m | 11.7760 | 1.7864 | 40.2933 | 2.6566 |
-| 115 m | 11.7615 | 1.7846 | 40.2322 | 2.6552 |
+![Traffic organization and relative cycle demand](../assets/traffic_comparison.png)
 
-The expanded map increases the reference's maximum I₃ by a factor of 7.7912, compared with approximately 1.182 for the four comparison cases. This explains why the relative index decreases without a change in the original histories.
+At the duration-matched 40 m reference spacing, uniform traffic with lateral spread 0.15 has R₃ = 0.6792 and R₅ = 1.5565. Grouped traffic has R₃ = 1.6645 and R₅ = 4.2287. Consequently, a lower exponent-3 index does not establish a lower index when large cycles receive exponent-5 weighting.
 
-![Different gains from additional sampling](../assets/sampling_gain.png)
+Across uniform-order cases at all four reference spacings, lateral spread 0.05 gives R₃ = 1.7622–1.7905 and R₅ = 2.6186–2.6668. Lateral spread 0.15 gives R₃ = 0.6718–0.6792 and R₅ = 1.5321–1.5565.
 
-The 40 m cases provide the duration-matched reference comparison. Other spacings compare the response to the same 240 vehicles over different passage durations. They do not represent equal-density comparisons or hourly/annual fatigue rates. The expanded map improves the evidence but does not certify a whole-deck cumulative-index maximum.
+## Peak-range coverage
 
-## Subsequent section-recovery work
+Coverage compares the largest saved rainflow range with the interior plate-field temporal range in each normal direction. The reported case coverage is the smaller longitudinal/transverse ratio. The minimum across all 22 cases is **95.53%**.
 
-The 26 October extension assigns drawing-derived, smeared nominal reinforcement sections to all 119 saved coordinates. It checks 952 section variants through 3,808 independent unit-resultant integrations, with a maximum normalized residual of approximately 1.1 × 10⁻¹⁴. These checks verify implementation under the stated assumptions.
+![Peak-range coverage](../assets/response_coverage.png)
 
-This extension recovers stresses from the saved section-resultant histories while retaining the original dynamic solution. It does not reassemble the global bridge with the new section stiffness, resolve actual cracking, or establish as-built reinforcement geometry. It remains separate from the historical gross-section sampling result above. This case study does not publish an absolute material-damage or fatigue-life estimate.
+Coverage measures capture of peak stress range. It supports the scenario screening objective, while cumulative-index convergence and certified whole-deck fatigue maxima remain separate questions.
 
-## Evidence dates and limitations
+## Complete scenario results
 
-| Evidence | Research record date | Supported conclusion |
-|---|---|---|
-| Initial campaign saved-result audit | 16 October 2026 | Complete, finite histories and declared contact convergence for the 20 audited cases |
-| Common expanded-map comparison | 23 October 2026 | Exact regression of original histories and the five-case sampling comparison |
-| Section-mapping verification | 26 October 2026 | Numerical section-recovery implementation under nominal mapping assumptions |
+The scenario label gives reference spacing / normalized lateral spread / heavy-vehicle ordering. Ratios use the same two-lane reference for all cases.
 
-The private research workspace retains the underlying reports, source results and numerical checks. This public account contains selected aggregate values and newly written explanations. Independent rerunning of the full simulation requires the private implementation and inputs. Experimental validation, local convergence of fatigue quantities and a suitable material fatigue law remain open.
+| Scenario | R₃ | R₅ | Minimum peak-range coverage |
+|---|---:|---:|---:|
+| 30 m / 0.05 / Uniform | 1.7622 | 2.6186 | 100.00% |
+| 30 m / 0.10 / Clustered | 1.0387 | 1.4543 | 97.92% |
+| 30 m / 0.10 / Fixed random | 1.0565 | 1.5185 | 98.87% |
+| 30 m / 0.10 / Uniform | 1.0584 | 1.5453 | 99.14% |
+| 30 m / 0.15 / Uniform | 0.6718 | 1.5358 | 95.53% |
+| 40 m / 0.05 / Uniform | 1.7905 | 2.6668 | 100.00% |
+| 40 m / 0.10 / Clustered | 1.0990 | 1.4845 | 98.93% |
+| 40 m / 0.10 / Fixed random | 1.0819 | 1.5138 | 98.88% |
+| 40 m / 0.10 / Uniform | 1.0775 | 1.5468 | 99.06% |
+| 40 m / 0.15 / Uniform | 0.6792 | 1.5565 | 96.71% |
+| 60 m / 0.05 / Uniform | 1.7864 | 2.6566 | 100.00% |
+| 60 m / 0.10 / Clustered | 1.0704 | 1.4797 | 99.20% |
+| 60 m / 0.10 / Fixed random | 1.0692 | 1.5099 | 99.16% |
+| 60 m / 0.10 / Uniform | 1.0684 | 1.5450 | 99.17% |
+| 60 m / 0.15 / Uniform | 0.6737 | 1.5369 | 98.10% |
+| 115 m / 0.05 / Uniform | 1.7846 | 2.6552 | 100.00% |
+| 115 m / 0.10 / Clustered | 1.0662 | 1.4740 | 99.16% |
+| 115 m / 0.10 / Fixed random | 1.0676 | 1.5111 | 99.17% |
+| 115 m / 0.10 / Uniform | 1.0672 | 1.5441 | 99.17% |
+| 115 m / 0.15 / Uniform | 0.6723 | 1.5321 | 98.10% |
+| Grouped traffic | 1.6645 | 4.2287 | 98.62% |
+| Two-lane reference | 1.0000 | 1.0000 | 100.00% |
+
+Only the 40 m cases provide a duration-matched comparison to the two-lane reference. Other spacings compare the same 240 vehicles over different passage durations. These are not hourly or annual fatigue-rate ratios.
+
+## Section recovery and numerical checks
+
+Nominal reinforcement-section recovery covers all saved observation coordinates. The implementation checks 952 section variants using 3,808 independent unit-resultant integrations, with a maximum normalized residual of approximately 1.1 × 10⁻¹⁴. The checks verify the implementation under the stated nominal section assumptions.
+
+Section recovery retains the saved dynamic section-resultant histories. It does not reassemble the global bridge with the recovered section stiffness or resolve physical cracking. Its verification does not turn the nominal stress-cycle indices above into a calibrated material-damage or fatigue-life estimate.
+
+## Acknowledgement and scope
+
+Professor Kai-Chun Chang provided the bridge drawings and source reference materials. This public case study contains aggregate results and explanatory figures. The private framework, source drawings, model files and raw simulation histories remain excluded. Experimental validation and a suitable material fatigue law remain open.

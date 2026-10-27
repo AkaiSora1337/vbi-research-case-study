@@ -17,7 +17,7 @@
 - Engineering drawings, books, papers, and extracted figures.
 - Internal file paths, machine logs, credentials, hashes, and environment records.
 - Unreviewed raw output and unpublished material beyond the selected aggregate case-study results.
-- Bridge drawings and source reference materials provided by Professor Zhang.
+- Bridge drawings and source reference materials provided by Professor Kai-Chun Chang.
 - Any private framework material authored by another contributor unless separately licensed or explicitly approved.
 
 ## Rationale

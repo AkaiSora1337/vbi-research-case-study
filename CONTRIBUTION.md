@@ -18,7 +18,7 @@ I independently completed the following work:
 
 ## Source-material and software boundary
 
-The bridge drawings and source reference materials were provided by Professor Zhang. I used those materials as engineering inputs, but I did not create them and do not claim ownership of them.
+The bridge drawings and source reference materials were provided by Professor Kai-Chun Chang. I used those materials as engineering inputs, but I did not create them and do not claim ownership of them.
 
 The model reconstruction, implementation, numerical verification, convergence studies, long-run simulation review, provenance workflow, and technical documentation described in this case study are my own work.
 

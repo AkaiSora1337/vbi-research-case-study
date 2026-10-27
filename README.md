@@ -3,19 +3,21 @@
 **Wang Yanjun**  
 Civil, Environmental and Resources Engineering, Faculty of Engineering, Kyoto University
 
-A research case study in vehicle–bridge interaction, spatial sampling and numerical verification. Preliminary results, October 2026.
+A research case study in vehicle–bridge interaction and nominal concrete stress-cycle demand. Preliminary results, October 2026.
 
 [Read the research poster](poster/VBI_research_poster.pdf) · [Editable PowerPoint](poster/VBI_research_poster.pptx) · [Results and interpretation](docs/results.md) · [My contribution](CONTRIBUTION.md)
 
 ![Research poster preview](poster/preview.png)
 
-## Selected finding
+## Results
 
-Expanding the recording map from **61 to 109 interior locations** changed the relative nominal stress-cycle index, even though all original moment histories remained exactly unchanged. For four selected uniform-order traffic cases, the maximum fixed-channel I₃ ratio to the two-lane reference changed from **11.61–11.81** to **1.76–1.79**. The reference case benefited much more from the added locations.
+The study compares **22 traffic scenarios** using the same 240-vehicle fleet. At the duration-matched 40 m reference spacing, uniform traffic with normalized lateral spread 0.15 gives **R₃ = 0.679** and **R₅ = 1.557**, relative to two-lane traffic = 1. Grouped traffic gives **R₃ = 1.665** and **R₅ = 4.229**. The different exponents highlight the influence of larger stress cycles.
 
-This finding demonstrates the importance of checking spatial sampling before interpreting relative cycle demand. These ratios describe a particular gross-section nominal-stress screening study. They are not fatigue-life ratios or established whole-deck maxima. [Read the definitions and scope](docs/results.md).
+The minimum peak-range coverage across the 22 cases is **95.53%**, measured against the interior plate-field range. This coverage supports nominal stress-cycle screening. It does not establish a converged whole-deck cumulative-index maximum or a material fatigue-life ratio. [Definitions and the complete results table](docs/results.md).
 
-![Sampling sensitivity for two screening exponents](assets/sampling_sensitivity.png)
+![Traffic comparison](assets/traffic_comparison.png)
+
+![Peak-range coverage across the traffic scenarios](assets/response_coverage.png)
 
 ## Overview
 
@@ -23,7 +25,7 @@ Vehicle–bridge interaction (VBI) simulations combine bridge dynamics, moving v
 
 This case study presents the work I completed: turning a complex research workflow into an auditable sequence of model reconstruction, numerical checks, convergence studies, and carefully scoped conclusions.
 
-The original bridge drawings and reference materials were provided by Professor Zhang. They are intentionally not included because I do not own the right to redistribute them. The private source framework and research files are also excluded. The reconstruction, implementation, verification workflow, simulation review, and documentation described here are my own work.
+The original bridge drawings and reference materials were provided by Professor Kai-Chun Chang. They are intentionally not included because I do not own the right to redistribute them. The private source framework and research files are also excluded. The reconstruction, implementation, verification workflow, simulation review, and documentation described here are my own work.
 
 ## My contribution
 
@@ -102,7 +104,7 @@ It is a portfolio case study about research reasoning, numerical verification, a
 
 ## Acknowledgement
 
-I thank Professor Zhang for providing the bridge drawings and source reference materials used in the research. Those materials remain the property of their respective owners and are not reproduced here.
+I thank Professor Kai-Chun Chang for providing the bridge drawings and source reference materials used in the research. Those materials remain the property of their respective owners and are not reproduced here.
 
 ## Contact
 
