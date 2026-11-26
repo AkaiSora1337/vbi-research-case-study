@@ -7,29 +7,23 @@ Civil, Environmental and Resources Engineering, Faculty of Engineering, Kyoto Un
 
 [Research poster (PDF)](poster/VBI_research_poster.pdf) · [Editable PowerPoint](poster/VBI_research_poster.pptx) · [Results](docs/results.md) · [My contribution](CONTRIBUTION.md)
 
-![Research poster preview](poster/preview.png)
+## Research question and approach
 
-## Fatigue results
+How does the way vehicles travel across a bridge change where concrete deck stresses build up? I compared 22 vehicle–bridge simulations with the same fleet, including two-lane and flocking references. I used elastic response envelopes to locate peaks, then assessed recovered concrete stresses for tensile exceedances and repeated compression.
 
-The November 2026 simulation campaign completed **22 traffic scenarios**. Maximum conditional compression damage was **1.41587 × 10⁻¹³** for the two-lane reference and **6.81051 × 10⁻¹⁴** for flocking. Flocking had **11 tensile exceedance locations and 17 point events**. The two-lane reference had zero.
+## Where stress and deflection concentrate
 
-The compression index uses an extrapolated S–N curve. The November comparison remains preliminary pending further solver verification.
+In the flocking reference, top-face tension follows the girder lines, while bottom-face tension concentrates between them. This pattern is consistent with bending over the girders and local sagging between them. The largest vertical deflection occurs near the middle of the bridge. The three panels show the time peak at each location from the elastic model.
 
-![Conditional compression fatigue damage](assets/fatigue_performance.png)
+![Flocking elastic envelopes for top and bottom principal tension and vertical deflection](assets/flocking_spatial_envelopes.png)
 
-![Tensile exceedance results](assets/tensile_exceedance.png)
+## Where the tensile threshold is exceeded
 
-## Tensile exceedances across lane-free scenarios
+The two-lane reference had **zero exceedances**. Flocking had **11 locations and 17 point events**, concentrated in a narrow band across the deck. Colours show recovered tensile stress relative to the local screening strength. Red rings mark exceedance. Nearby observations are combined on a relative grid for display, and labels show where a ring represents multiple flagged locations.
 
-Of the 20 lane-free scenarios, eight had no tensile exceedance locations, one had one location, and eleven had two.
+![Two-lane and flocking tensile exceedance locations on relative deck axes](assets/tensile_exceedance_locations.png)
 
-![Tensile exceedance locations across the 20 lane-free scenarios: 8 cases with zero, 1 with one, and 11 with two](assets/lane_free_tensile_distribution.png)
-
-## Peak stress coverage
-
-Across the 22 scenarios, the interior sampled-to-plate-centre peak ratios were **99.87–104.38% in tension** and **99.56–102.03% in compression**. These percentages compare principal stress peak amplitudes. The dashed line marks equal peak amplitudes. Values above 100% occur when the sampled peak is higher than the peak at the plate centres.
-
-![Peak stress coverage ranges across all 22 scenarios: 99.87–104.38% in tension and 99.56–102.03% in compression, with 100% marked as equal peak amplitude](assets/peak_stress_coverage.png)
+Flocking produced **8.82 mm** peak deflection versus **5.50 mm** for two-lane traffic, with similar peak interior accelerations. The [detailed results](docs/results.md) give the response comparison, compression check, and peak coverage. The November results remain preliminary pending further solver verification.
 
 ## Contribution and acknowledgement
 
