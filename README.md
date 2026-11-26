@@ -11,7 +11,9 @@ Civil, Environmental and Resources Engineering, Faculty of Engineering, Kyoto Un
 
 ## Fatigue results
 
-All **22 traffic scenarios** in the 29–30 October 2026 simulation campaign completed. Maximum conditional compression damage was **1.24296 × 10⁻¹³** for the two-lane reference and **6.1632 × 10⁻¹⁴** for flocking. Flocking had **10 tensile exceedance locations and 16 point events**. The two-lane reference had zero.
+The November 2026 simulation campaign completed **22 traffic scenarios**. Maximum conditional compression damage was **1.41587 × 10⁻¹³** for the two-lane reference and **6.81051 × 10⁻¹⁴** for flocking. Flocking had **11 tensile exceedance locations and 17 point events**. The two-lane reference had zero.
+
+The compression index uses an extrapolated S–N curve. The November comparison remains preliminary pending further solver verification.
 
 ![Conditional compression fatigue damage](assets/fatigue_performance.png)
 
@@ -19,7 +21,7 @@ All **22 traffic scenarios** in the 29–30 October 2026 simulation campaign com
 
 ## Peak stress coverage
 
-Across the 22 scenarios, the interior sampled-to-plate-centre peak ratios were **99.86–104.45% in tension** and **99.71–102.05% in compression**. These percentages compare principal stress peak amplitudes.
+Across the 22 scenarios, the interior sampled-to-plate-centre peak ratios were **99.87–104.38% in tension** and **99.56–102.03% in compression**. These percentages compare principal stress peak amplitudes.
 
 ## Contribution and acknowledgement
 
