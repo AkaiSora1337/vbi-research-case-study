@@ -19,9 +19,17 @@ The compression index uses an extrapolated S–N curve. The November comparison 
 
 ![Tensile exceedance results](assets/tensile_exceedance.png)
 
+## Tensile exceedances across lane-free scenarios
+
+Of the 20 lane-free scenarios, eight had no tensile exceedance locations, one had one location, and eleven had two.
+
+![Tensile exceedance locations across the 20 lane-free scenarios: 8 cases with zero, 1 with one, and 11 with two](assets/lane_free_tensile_distribution.png)
+
 ## Peak stress coverage
 
-Across the 22 scenarios, the interior sampled-to-plate-centre peak ratios were **99.87–104.38% in tension** and **99.56–102.03% in compression**. These percentages compare principal stress peak amplitudes.
+Across the 22 scenarios, the interior sampled-to-plate-centre peak ratios were **99.87–104.38% in tension** and **99.56–102.03% in compression**. These percentages compare principal stress peak amplitudes. The dashed line marks equal peak amplitudes. Values above 100% occur when the sampled peak is higher than the peak at the plate centres.
+
+![Peak stress coverage ranges across all 22 scenarios: 99.87–104.38% in tension and 99.56–102.03% in compression, with 100% marked as equal peak amplitude](assets/peak_stress_coverage.png)
 
 ## Contribution and acknowledgement
 
